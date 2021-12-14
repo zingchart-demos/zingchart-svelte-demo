@@ -1,0 +1,52 @@
+<script>
+  /*
+   * A single button on the navigation bar
+   */
+	import {Navigate} from 'svelte-router-spa'
+
+	export let path = ''
+	export let label = ''
+	export let currentRoute
+
+	let isCurrent = false
+
+	$: isCurrent = (currentRoute && path && currentRoute.path === path)
+</script>
+
+<Navigate 
+	to={path} 
+	title={label}
+	styles="{isCurrent ? 'navbtn current' : 'navbtn'}">
+		{label}
+</Navigate>
+
+<style>
+
+:global(.navbtn) {  
+	background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  margin-right: 1em;
+}
+
+:global(.navbtn:visited) {
+	text-decoration: none;
+	color: white;
+}
+
+:global(.navbtn.current) {
+	text-decoration: none;
+	color: rgb(56, 56, 56);
+}
+
+:global(.navbtn:not(.current):hover) {
+	text-decoration: none;
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+</style>
