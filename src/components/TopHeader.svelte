@@ -51,7 +51,7 @@
 		<NavbarItem {currentRoute} path="/license" label="Multiple Plots" />
 	</div>
 	<h4>{modules[currentRoute.name].text}</h4>
-	<div class="viewsrc"><a target="_blank" href={modules[currentRoute.name].link}>View source on Github</a></div>
+	<div class="viewsrc"><a target="_blank" rel="noreferrer" href={modules[currentRoute.name].link}>View source on Github</a></div>
 </div>
 
 <style>
