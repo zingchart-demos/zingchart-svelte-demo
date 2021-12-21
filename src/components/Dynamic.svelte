@@ -24,7 +24,6 @@
    */
   function shuffle() {
     config.series = [{values: randomData(nValues)}]
-    //config = setConfig(state => ({...state, series: [{values: randomData(nValues)}]}));
   }
 
   // Periodically update the chart data
