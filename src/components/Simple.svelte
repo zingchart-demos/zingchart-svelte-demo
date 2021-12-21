@@ -2,7 +2,7 @@
   /*
    * Simplest demo, just a bar chart of static data
    */
-  import ZingChart from 'zingchart-svelte'
+  import ZingChart from '@zingsoft/zingchart-svelte'
 
 	const config = {
 		type: 'bar',

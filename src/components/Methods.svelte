@@ -3,7 +3,7 @@
    * A bar chart with a button that adds additional data. Demonstrates
 	 * using a reference to a ZingChart component.
    */
-  import ZingChart from 'zingchart-svelte'
+  import ZingChart from '@zingsoft/zingchart-svelte'
 
 	// This chart
 	let chart

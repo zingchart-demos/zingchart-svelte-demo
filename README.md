@@ -36,5 +36,5 @@ This project was bootstrapped with [Svelte template](https://github.com/sveltejs
 npx degit sveltejs/template zingchart-svelte-demo
 cd zingchart-svelte-demo
 npm install svelte-router-spa
-npm install -D zingchart-svelte
+npm install -D @zingsoft/zingchart-svelte
 ```

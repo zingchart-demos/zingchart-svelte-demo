@@ -4,7 +4,7 @@
    * flags on the ZingChart object, as well as multiple 
    * plots in one chart.
    */
-  import ZingChart from 'zingchart-svelte'
+  import ZingChart from '@zingsoft/zingchart-svelte'
 
   // Set performance flags on the ZingChart object
   zingchart.DEV.KEEPSOURCE = 0; // prevents lib from storing the original data package

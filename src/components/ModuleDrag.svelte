@@ -4,7 +4,7 @@
    * using the dragging module. Note that the module is imported
    * and then passed as a prop to the ZingChart component.
    */
-  import ZingChart from 'zingchart-svelte'
+  import ZingChart from '@zingsoft/zingchart-svelte'
   import 'zingchart/modules-es6/zingchart-dragging.min.js'
 
   const startingValues = [20, 40, 14, 50, 15, 35, 5]

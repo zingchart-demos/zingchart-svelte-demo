@@ -4,7 +4,7 @@
    * configuration of an existing ZingChart.
    */
   import {onDestroy, onMount} from 'svelte'
-  import ZingChart from 'zingchart-svelte'
+  import ZingChart from '@zingsoft/zingchart-svelte'
 
   const nValues = 10
   const period = 1000  // milliseconds

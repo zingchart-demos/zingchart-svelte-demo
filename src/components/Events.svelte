@@ -2,7 +2,7 @@
   /*
    * A line chart with events logged to a text box
    */
-  import ZingChart from 'zingchart-svelte'
+  import ZingChart from '@zingsoft/zingchart-svelte'
 
 	const listOfEventListeners = ['complete', 'node_mouseover'];
   //const events = listOfEventListeners.map((value, index) => (<li key={index}>{value}</li>));
