@@ -1,9 +1,9 @@
 {
   "name": "zingchart-svelte-demo",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "private": true,
   "scripts": {
-    "build": "rollup -c",
+    "build": "scripts/publish && scripts/copyCode && rollup -c",
     "dev": "rollup -c -w",
     "start": "sirv public -s --no-clear"
   },

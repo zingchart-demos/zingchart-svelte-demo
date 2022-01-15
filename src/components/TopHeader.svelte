@@ -1,4 +1,6 @@
 <script>
+	import {modules} from '../stores'
+
   /*
    * Header
    */
@@ -6,52 +8,17 @@
 
 	export let currentRoute
 
-	const modules = {
-		'/': {
-			text: 'Demonstrates a simple chart of static data',
-			link: 'https://github.com/zingchart-demos/zingchart-svelte-demo/blob/main/src/components/Simple.svelte'
-		},
-		'/module_chart': {
-			text: 'Demonstrates explicitly importing ZingChart modules',
-			link: 'https://github.com/zingchart-demos/zingchart-svelte-demo/blob/main/src/components/ModuleChart.svelte'
-		},
-		'/module_drag': {
-			text: 'Demonstrates interacting with a chart to change data',
-			link: 'https://github.com/zingchart-demos/zingchart-svelte-demo/blob/main/src/components/ModuleDrag.svelte'
-		},
-		'/dynamic': {
-			text: 'Demonstrates modifying the configuration of an existing chart',
-			link: 'https://github.com/zingchart-demos/zingchart-svelte-demo/blob/main/src/components/Dynamic.svelte'
-		},
-		'/events': {
-			text: 'Demonstrates responding to chart events',
-			link: 'https://github.com/zingchart-demos/zingchart-svelte-demo/blob/main/src/components/Events.svelte'
-		},
-		'/methods': {
-			text: 'Demonstrates using a reference to a ZingChart element to invoke methods on it',
-			link: 'https://github.com/zingchart-demos/zingchart-svelte-demo/blob/main/src/components/Methods.svelte'
-		},
-		'/license': {
-			text: 'Demonstrates setting the license key and performance flags on the ZingChart object, as well as multiple plots in one chart',
-			link: 'https://github.com/zingchart-demos/zingchart-svelte-demo/blob/main/src/components/License.svelte'
-		},
-	}
-
 </script>
 
 <div class="header">
 	<h2>zingchart-svelte Demo</h2>
 	<div class="buttonbar">
-		<NavbarItem {currentRoute} path="/" label="Hello World" />
-		<NavbarItem {currentRoute} path="/module_chart" label="US Map" />
-		<NavbarItem {currentRoute} path="/module_drag" label="Interaction" />
-		<NavbarItem {currentRoute} path="/dynamic" label="Reconfiguring" />
-		<NavbarItem {currentRoute} path="/events" label="Events" />
-		<NavbarItem {currentRoute} path="/methods" label="Methods" />
-		<NavbarItem {currentRoute} path="/license" label="Multiple Plots" />
+		{#each Object.entries($modules) as [path, mod]}
+			<NavbarItem {currentRoute} path={path} label={mod.label} />
+		{/each}
 	</div>
-	<h4>{modules[currentRoute.name].text}</h4>
-	<div class="viewsrc"><a target="_blank" rel="noreferrer" href={modules[currentRoute.name].link}>View source on Github</a></div>
+	<h4>{$modules[currentRoute.name].text}</h4>
+	<div class="viewsrc"><a target="_blank" rel="noreferrer" href={$modules[currentRoute.name].link}>View source on Github</a></div>
 </div>
 
 <style>

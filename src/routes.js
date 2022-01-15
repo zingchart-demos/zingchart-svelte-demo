@@ -1,11 +1,11 @@
 import MainLayout from './layouts/layout.svelte'
-import Simple from './components/Simple.svelte'
-import Dynamic from './components/Dynamic.svelte'
-import Events from './components/Events.svelte'
-import License from './components/License.svelte'
-import Methods from './components/Methods.svelte'
-import ModuleChart from './components/ModuleChart.svelte'
-import ModuleDrag from './components/ModuleDrag.svelte'
+import Simple from './demos/Simple.svelte'
+import Dynamic from './demos/Dynamic.svelte'
+import Events from './demos/Events.svelte'
+import License from './demos/License.svelte'
+import Methods from './demos/Methods.svelte'
+import ModuleChart from './demos/ModuleChart.svelte'
+import ModuleDrag from './demos/ModuleDrag.svelte'
 
 const routes = [
 	{name: '/', component: Simple, layout: MainLayout},
