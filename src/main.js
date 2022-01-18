@@ -6,7 +6,7 @@ import 'prismjs/plugins/command-line/prism-command-line.css'
 import 'prismjs/plugins/line-highlight/prism-line-highlight.css'
 
 import 'prismjs/themes/prism.css'
-import 'prismjs/themse/prism-coy.css'
+import 'prismjs/themes/prism-solarizedlight.css'
 
 /* Import the language definition for Svelte. Note that
  * this does not use the Prism from sveltejs-prism, it uses
