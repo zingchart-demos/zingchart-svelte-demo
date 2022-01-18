@@ -5,9 +5,10 @@ import {readable, writable, derived} from 'svelte/store'
 
 export const pubDate = writable('')
 export const version = writable('')
+export const showCode = writable(false)
 
 export const github = readable('https://github.com/zingchart-demos/zingchart-svelte-demo')
-export const gitBlob = derived(github, $github => $github + '/blob/main/src/components/')
+export const gitBlob = derived(github, $github => $github + '/blob/main/src/demos/')
 export const gitIssues = derived(github, $github => $github + '/issues')
 export const pricing = readable('https://zingchart.com/pricing')
 

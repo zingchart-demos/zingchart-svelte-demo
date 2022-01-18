@@ -10,15 +10,18 @@
   "devDependencies": {
     "@rollup/plugin-commonjs": "^17.0.0",
     "@rollup/plugin-node-resolve": "^11.0.0",
+    "@zingsoft/zingchart-svelte": "^1.0.0",
     "rollup": "^2.3.4",
     "rollup-plugin-css-only": "^3.1.0",
     "rollup-plugin-livereload": "^2.0.0",
     "rollup-plugin-svelte": "^7.0.0",
     "rollup-plugin-terser": "^7.0.0",
     "svelte": "^3.0.0",
-    "@zingsoft/zingchart-svelte": "^1.0.0"
+    "svelte-prismjs": "^1.0.2"
   },
   "dependencies": {
+    "prism-svelte": "^0.4.7",
+    "prismjs": "^1.26.0",
     "sirv-cli": "^1.0.0",
     "svelte-router-spa": "^6.0.3"
   }

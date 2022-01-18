@@ -23,16 +23,16 @@
 <style>
 
 :global(.navbtn) {  
-	background-color: #4CAF50;
+	background-color: #1a456d;
   border: none;
   color: white;
-  padding: 15px 32px;
+  padding: 0.5rem 1.25rem;
   text-align: center;
   display: inline-block;
   font-size: 16px;
-  border-radius: 8px;
+  border-radius: 5px;
   text-decoration: none;
-  margin-right: 1em;
+  margin-right: 1rem;
 }
 
 :global(.navbtn:visited) {
@@ -41,8 +41,10 @@
 }
 
 :global(.navbtn.current) {
-	text-decoration: none;
-	color: rgb(56, 56, 56);
+	font-weight: bold;
+	outline: solid;
+	outline-offset: 2px;
+	outline-color: #1a456d;
 }
 
 :global(.navbtn:not(.current):hover) {
