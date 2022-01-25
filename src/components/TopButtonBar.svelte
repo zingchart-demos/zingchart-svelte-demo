@@ -19,8 +19,10 @@
 	background-color: #4490CF;
 	display: flex;
 	flex-direction: row;
-	justify-content: center;
-	padding: 1.5rem;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+	padding-top: 1.5rem;
+	padding-bottom: 2rem;
 }
 
 </style>

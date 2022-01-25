@@ -32,7 +32,9 @@
   font-size: 16px;
   border-radius: 5px;
   text-decoration: none;
-  margin-right: 1rem;
+  margin-right: .3rem;
+	margin-left: .3rem;
+	margin-top: 1rem;
 }
 
 :global(.navbtn:visited) {
