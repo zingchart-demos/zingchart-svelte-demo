@@ -1,8 +1,5 @@
 <script>
 	import {github} from '../stores'
-
-	export let currentRoute
-
 </script>
 
 <div class="header">
